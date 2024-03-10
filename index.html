@@ -1,0 +1,60 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Congruencial Lineal</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+   <div id="repetidosInfo"> <p>Los Valores En Amarillos Son Los Números Repetidos.</p></div>
+       
+       
+   
+  
+  <div id="container">
+        <center>
+            <h2>Método de Congruencial Multiplicativo</h2>
+            <div class="separator"></div>
+            <div class="input-container">
+                <label for="xInput">Ingrese el valor inicial (X): </label>
+                <input type="number" id="xInput">
+            </div>
+            <div class="input-container">
+                <label for="aInput">Ingrese el valor de A: </label>
+                <input type="number" id="aInput">
+            </div>
+            <div class="input-container">
+                <label for="mInput">Ingrese el valor de M: </label>
+                <input type="number" id="mInput">
+            </div>
+            <div class="input-container">
+                <label for="nInput">Ingrese la cantidad de números a generar: </label>
+                <input type="number" id="nInput">
+            </div>
+            <br></br>
+            <button onclick="generarNumeros()">Generar Números</button>
+            <div class="separator"></div>
+        </center>
+
+        <table id="resultados">
+            <thead>
+                <tr>
+                    <th>Iteración</th>
+                    <th>X</th>
+                    <th>R</th>
+                </tr>
+            </thead>
+            <tbody id="tablaResultados">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="container">
+        <center>
+            <div id="box">
+                <canvas id="myChart"></canvas>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
